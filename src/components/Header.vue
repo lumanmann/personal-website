@@ -9,9 +9,9 @@ function toggleBtn() {
 </script>
 
 <template>
-  <header class="sticky top-0 z-10 bg-white py-3 lg:py-7 transition duration-500">
-    <nav class="bg-white">
-      <div class="container px-4 mx-auto md:flex md:items-center ">
+  <header class="sticky top-0 z-20 bg-white py-3 lg:py-7 transition duration-500">
+    <nav class="bg-white ">
+      <div class="z-20 container px-4 mx-auto md:flex md:items-center ">
         <div class="flex justify-between items-center">
           <NuxtLink to="/" class="md:mr-8 ">
             <img src="@/assets/images/logo.svg" alt="logo">
@@ -30,7 +30,7 @@ function toggleBtn() {
           </button>
         </div>
 
-        <ul class="bg-white w-full md:w-auto flex flex-col md:flex-row items-center fixed left-0 md:relative pt-3 md:pt-0 md:mx-auto" :class="{ 'hidden md:flex': collapse }">
+        <ul class="z-20 bg-white w-full md:w-auto flex flex-col  md:flex-row items-center fixed left-0 md:relative pt-3 md:pt-0 md:mx-auto transition duration-500" :class="{ 'opacity-0 md:opacity-100': collapse, 'opacity-100': !collapse }">
           <li class="navItem">
             <NuxtLink to="/">
               首頁
@@ -59,7 +59,17 @@ function toggleBtn() {
         </ul>
       </div>
     </nav>
+    
+   
   </header>
+
+   <!-- Overlay -->
+   <div 
+    class="fixed inset-0 bg-black bg-opacity-60 z-10 transition duration-500" 
+    :class="{ 'opacity-0': collapse, 'opacity-100': !collapse }"
+  ></div>
+
+  
 </template>
 
 <style>
