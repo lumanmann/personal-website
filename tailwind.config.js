@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-import { fontFamily } from 'tailwindcss/defaultTheme'
-
 export default {
   theme: {
     container: {
@@ -19,9 +17,11 @@ export default {
         'text-dark': '#3B3B3B',
         'text-light': '#919191',
         'tag-color': '#F1F1F1',
+        'border-color': '#C1C1C1',
+        'gray': '#5B5B5B',
       },
       fontFamily: {
-        'noto': ['Noto Sans', 'sans-serif'],
+        noto: ['Noto Sans', 'sans-serif'],
       },
     },
   },

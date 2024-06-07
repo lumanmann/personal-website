@@ -18,7 +18,7 @@
 
 @layer components {
     .fs-5 {
-        @apply text-lg font-normal leading-[1.2];
+        @apply text-lg font-normal leading-[1.5];
     }
 
     .fs-6 {
