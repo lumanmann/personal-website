@@ -19,6 +19,7 @@ export default {
         'tag-color': '#F1F1F1',
         'border-color': '#C1C1C1',
         'gray': '#5B5B5B',
+        'quote': '#1E1E1E'
       },
       fontFamily: {
         noto: ['Noto Sans', 'sans-serif'],
