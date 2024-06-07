@@ -14,7 +14,7 @@ function toggleBtn() {
       <div class="container px-4 mx-auto md:flex md:items-center ">
         <div class="flex justify-between items-center">
           <NuxtLink to="/" class="md:mr-8 ">
-            <img src="@/assets/images/logo.png" alt="logo">
+            <img src="@/assets/images/logo.svg" alt="logo">
           </NuxtLink>
 
           <button
@@ -33,29 +33,29 @@ function toggleBtn() {
         <ul class="bg-white w-full md:w-auto flex flex-col md:flex-row items-center fixed left-0 md:relative pt-3 md:pt-0 md:mx-auto" :class="{ 'hidden md:flex': collapse }">
           <li class="navItem">
             <NuxtLink to="/">
-            首頁
-          </NuxtLink>
-        </li >
-          <li class="navItem"> 
-            <NuxtLink to="/portfolio" >
-            作品集
-          </NuxtLink>
-        </li>
-          <li class="navItem">  
-            <NuxtLink to="#" >
-            服務項目
-          </NuxtLink>
-        </li>
-          <li class="navItem">  
-            <NuxtLink to="#" >
-            部落格
-          </NuxtLink>
-        </li>
-          <li class="navItem"> 
+              首頁
+            </NuxtLink>
+          </li>
+          <li class="navItem">
+            <NuxtLink to="/portfolio">
+              作品集
+            </NuxtLink>
+          </li>
+          <li class="navItem">
             <NuxtLink to="#">
-            聯絡我
-          </NuxtLink>
-        </li>
+              服務項目
+            </NuxtLink>
+          </li>
+          <li class="navItem">
+            <NuxtLink to="#">
+              部落格
+            </NuxtLink>
+          </li>
+          <li class="navItem">
+            <NuxtLink to="#">
+              聯絡我
+            </NuxtLink>
+          </li>
         </ul>
       </div>
     </nav>
